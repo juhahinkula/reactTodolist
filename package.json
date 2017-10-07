@@ -8,8 +8,7 @@
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-table": "^6.6.0",
-    "reacttable": "^0.2.0"
+    "react-table": "^6.6.0"
   },
   "scripts": {
     "start": "react-scripts start",

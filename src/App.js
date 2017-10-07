@@ -16,8 +16,8 @@ class App extends Component {
     event.preventDefault();
     const newTodo =  {description: this.state.description, date: this.state.date};
     this.setState({
-      description: '',
       date: '',
+      description: '',
       todos: [...this.state.todos, newTodo]
     });
   }
@@ -31,7 +31,7 @@ class App extends Component {
         <div>
           <form onSubmit={this.addTodo}>
             <fieldset>
-            <legend>New todo: </legend>
+            <legend>New todo:</legend>
             Description: <input type="text" name="description" onChange={this.inputChanged} value={this.state.description}/>
             Date: <input type="text" placeholder="dd.mm.yyyy" name="date" onChange={this.inputChanged} value={this.state.date}/>
             <input type="submit" value="Add"/>
