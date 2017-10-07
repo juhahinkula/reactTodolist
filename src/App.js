@@ -16,6 +16,8 @@ class App extends Component {
     event.preventDefault();
     const newTodo =  {description: this.state.description, date: this.state.date};
     this.setState({
+      description: '',
+      date: '',
       todos: [...this.state.todos, newTodo]
     });
   }
