@@ -18,6 +18,10 @@
   font-size: large;
 }
 
+input {
+  margin-right: 10px;
+}
+
 button {
   margin-left: 20px;
 }

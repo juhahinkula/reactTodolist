@@ -28,11 +28,12 @@ class App extends Component {
         </div>
         <div>
           <form onSubmit={this.addTodo}>
-            Description:<br/>
-            <input type="text" name="description" onChange={this.inputChanged} value={this.state.description}/><br/>
-             Date:<br/>
-            <input type="text" name="date" onChange={this.inputChanged} value={this.state.date}/>
+            <fieldset>
+            <legend>New todo: </legend>
+            Description: <input type="text" name="description" onChange={this.inputChanged} value={this.state.description}/>
+            Date: <input type="text" placeholder="dd.mm.yyyy" name="date" onChange={this.inputChanged} value={this.state.date}/>
             <input type="submit" value="Add"/>
+            </fieldset>
           </form>
         </div>
         <TodoTable todos={this.state.todos} />        
