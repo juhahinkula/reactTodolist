@@ -4,8 +4,8 @@ import 'react-table/react-table.css';
 import './App.css';
 
 class TodoTable extends Component {
-  constructor(props) {
-    super(props);
+  handleButtonClick = (row) => {
+    console.log('clicked: ' + row);
   }
 
   render() {
@@ -15,6 +15,9 @@ class TodoTable extends Component {
     }, {
       Header: 'Description',
       accessor: 'description',
+    }, { 
+      Header: '',
+      Cell: ({ row }) => (<button onClick={(e) => this.handleButtonClick(row)}>Delete</button>)
     }]
 
     return (
